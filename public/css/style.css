@@ -1,0 +1,33 @@
+/*ESTILO DA PAGINA LOGODO.HTML*/
+
+.container{
+    text-align: center;
+}
+
+
+/*ESTILO DA PAGINA INDEX.HTML*/
+.btnEnviar{
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.btnEnviar:hover{
+    background-color: chartreuse;
+    color: black;
+    transform: scale(1,1,1.1);
+}
+
+input{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+input:focus{
+    outline: 0;
+}
