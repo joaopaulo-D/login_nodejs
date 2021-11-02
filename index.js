@@ -3,10 +3,11 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 
 const app = express();
+const port = 3000;
 const path = require('path');
 
 var login = "joao";
-var email = "joao@gmail.com";
+var email = "joao@teste.com";
 var password = "123456";
  
 app.use(session({ secret: 'fqjfknewgfnkdvngrignirengikfe' }));
@@ -31,6 +32,6 @@ app.get('/', (req, res) => {
     res.render('index');
 })
 
-app.listen(3000, () => {
-    console.log("servidor rodando");
+app.listen(port, () => {
+    console.log(`servidor rodando na porta: ${port}`);
 })
